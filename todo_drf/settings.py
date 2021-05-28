@@ -22,7 +22,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 with open('/home/stiffer/projects/KEYS/django_secret_key.txt') as f:
     SECRET_KEY = f.read().strip()
-#SECRET_KEY = 'django-insecure-=%^47-1^f!fqp+-2p)=+bnm%l_b1g^-bt!cph+x+bkhn!*fmv='
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -38,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
+    'django.contrib.staticfiles',    
     'api.apps.ApiConfig',
 ]
 
